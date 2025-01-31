@@ -2,8 +2,10 @@
 
 Ce repository contient ce que j'ai fait lors du TP 2 de java vendredi 31 janvier.
 
-Il est composé de deux parties :
+Il est composé de 4 parties :
 - `depot`
 - `classe`
+- `YAIP`
+- `eval`
 
-`depot` contient la première heure de travail et `classe` contient la seconde heure de travail.
+`depot` contient la première heure de travail, `YAIP` contient les exercices en ligne, `classe` contient mon petit teste des class avec abstrait et `eval` contient l'évaluation de ce TP.
