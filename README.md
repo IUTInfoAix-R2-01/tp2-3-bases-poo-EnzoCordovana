@@ -1,8 +1,9 @@
-# r201-tp-doo : squelette de structure vide pour TP R2.01 DOO Java
+# r201-tp-doo : Depot & classe
 
-Noter :
-- la présence du fichier caché <code>.gitignore</code>, qui liste les fichiers que Git NE doit PAS versionner. 
-Ne pas modifier ce fichier.
-- la présence du fichier caché <code>.classpath</code>
+Ce repository contient ce que j'ai fait lors du TP 2 de java vendredi 31 janvier.
 
-Les fichiers sources, qui répondent au sujet, doivent tous être rangés dans le dossier principal, sans sous-dossiers.
+Il est composé de deux parties :
+- `depot`
+- `classe`
+
+`depot` contient la première heure de travail et `classe` contient la seconde heure de travail.
