@@ -1,13 +1,6 @@
 package Prof;
 
 public class Personne {
-	public static void main(String[] args) {
-		Personne p1 = new Personne("Laurence", "Ago");
-		Personne p2 = new Personne("Lolo");
-		
-		System.out.println(p1.toString());
-		System.out.println(p2.toString());
-	}
 	// Attributes
 	private String nom;
 	private String prenom;
@@ -49,6 +42,6 @@ public class Personne {
 	public String toString() {
 		return nom != null 
 				? "Nom: " + nom + ", Prénom: " + prenom 
-				: "Nom: null" + ", Prénom: " + prenom;
+				: "Prénom: " + prenom;
 	}
 }
