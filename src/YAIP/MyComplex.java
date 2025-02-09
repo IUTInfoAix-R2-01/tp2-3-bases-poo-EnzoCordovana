@@ -5,6 +5,9 @@ public class MyComplex {
 	private double real = 0.0;
 	private double imag = 0.0;
 	
+	MyComplex() {
+		
+	}
 	/*
 	 * @param reel		The imaginary side
 	 * @param imag		The real side
@@ -14,35 +17,34 @@ public class MyComplex {
 		this.imag = imag;
 	}
 	
-	// Methods
 	/*
 	 * @return real		The real side
 	*/
 	public double getReal() { // getter
-		return real;
+		return this.real;
 	}
 	
 	/*
 	 * @param newReal	The new real value
 	 * @return void 
 	*/
-	public void setReal(double newReal) { // setter
-		this.real = newReal;
+	public void setReal(double real) { // setter
+		this.real = real;
 	}
 	
 	/*
 	 * @return imag		The imaginary side
 	*/
 	public double getImag() { // getter
-		return imag;
+		return this.imag;
 	}
 	
 	/*
 	 * @param newImag	The new imaginary value
 	 * @return void 
 	*/
-	public void setImag(double newImag) { // setter
-		this.imag = newImag;
+	public void setImag(double imag) { // setter
+		this.imag = imag;
 	}
 	
 	/*
@@ -58,6 +60,7 @@ public class MyComplex {
 	/*
 	 * @return String	Return all attributes
 	*/
+	@Override
 	public String toString() {
 		return "real + imag : " + real + "+" + imag + "i"; 
 	}
@@ -86,6 +89,14 @@ public class MyComplex {
 	}
 	
 	/*
+	 * @param another		Other complex
+	 * @return boolean
+	*/
+	public boolean equals(MyComplex another) {
+		return this.real == another.real && this.imag == another.imag;
+	}
+	
+	/*
 	 * @return double 
 	*/
 	public double magnitude() {
@@ -93,11 +104,12 @@ public class MyComplex {
 	}
 	
 	public MyComplex addInto(MyComplex right) {
-		return null;
+		right.setValue(this.real + right.getReal(), this.imag + right.getImag());
+		return right;
 	}
 	
 	public MyComplex addNew(MyComplex right) {
-		return null;
+		return new MyComplex((this.real + right.getReal()),(this.imag + right.getImag()));
 	}
 	
 }
